@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import MarqueeBar from './components/MarqueeBar';
 import MarqueeBarBottom from './components/MarqueeBarBottom';
 import Collection from './components/Collection';
+import Info from './components/Info';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Products />
         <About />
         <MarqueeBarBottom />
+        <Info />
         <Footer />
       </div>
     </BrowserRouter>

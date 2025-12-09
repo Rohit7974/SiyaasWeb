@@ -4,7 +4,7 @@ const MarqueeBarSoy = () => {
   const outline2 = "ELEVATE EVERY ROOM WITH GENTLE AROMA.";
 
   return (
-    <div className=" bg-[#CFA36F] w-full overflow-hidden bg-white border-y border-gray-200">
+    <div className=" bg-[#CFA36F] w-full overflow-hidden  border-y border-gray-200">
       <div className="py-4">
         <div className="flex animate-marquee">
       

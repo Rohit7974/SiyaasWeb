@@ -4,6 +4,16 @@ import { FaTruck, FaUndo, FaTag } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 
 const MarqueeBar = () => {
+  const [isScrolled, setIsScrolled] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 56);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const items = [
     { icon: <FaUndo />, text: "6 Days Easy Return" },
     { icon: <MdLocationOn />, text: "Cash On Delivery Available" },
@@ -26,7 +36,9 @@ const MarqueeBar = () => {
   );
 
   return (
-    <div className="fixed top-0 left-0 w-full bg-[#8B5A2B] text-white py-3 overflow-hidden z-50">
+    <div className={`fixed top-0 left-0 w-full bg-[#8B5A2B] text-white py-3 overflow-hidden transition-all duration-500 ease-in-out z-50 ${
+      isScrolled ? "-translate-y-full opacity-0 pointer-events-none" : "translate-y-0 opacity-100"
+    }`}>
       <div className="max-w-7xl mx-auto">
         <div className="flex animate-marquee hover:[animation-play-state:paused]">
           {row}

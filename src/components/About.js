@@ -24,7 +24,7 @@ const testimonials = [
 export default function TestimonialSlider() {
   const [index, setIndex] = useState(0);
 
-  // Auto-scroll every 5 seconds
+
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % testimonials.length);
