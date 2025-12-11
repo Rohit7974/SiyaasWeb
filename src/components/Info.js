@@ -1,6 +1,5 @@
 import React from "react";
 import { ShieldCheck, Headphones, Truck, CreditCard } from "lucide-react";
-
 const Info = () => {
   const features = [
     {

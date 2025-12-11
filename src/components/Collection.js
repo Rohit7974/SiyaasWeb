@@ -28,14 +28,14 @@ function Collection() {
         Explore our finest curated selections.
       </p>
 
-      {/* ALWAYS 3 COLUMNS */}
+     
       <div className="grid grid-cols-3 gap-8 px-4 md:px-20">
         {categories.map((item, index) => (
           <div
             key={index}
             className="flex flex-col items-center group cursor-pointer"
           >
-            {/* SQUARE BOX */}
+           
             <div className="w-full aspect-square rounded-xl overflow-hidden shadow-lg">
               <iframe
                 className="w-full h-full transition-transform duration-500 group-hover:scale-105"

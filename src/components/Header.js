@@ -423,7 +423,6 @@ const Header = () => {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 flex items-center justify-between relative">
         
-        {/* MOBILE MENU BUTTON (LEFT NOW) */}
         <button
           className={`
             px-2 md:hidden absolute left-0 
@@ -436,7 +435,7 @@ const Header = () => {
           </svg>
         </button>
 
-        {/* LEFT NAVIGATION (SHIFTED LEFT) */}
+        
         <nav className=" hidden md:flex items-center gap-10 mr-auto">
           {navItems.map((item) => (
             <Link
@@ -452,7 +451,7 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* CENTER LOGO (PERFECT MIDDLE) */}
+        
         <div className="flex items-center justify-center mx-auto pointer-events-none absolute left-1/2 -translate-x-1/2">
           <div className="flex items-center gap-3 pointer-events-auto">
             <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white/30">
@@ -464,23 +463,23 @@ const Header = () => {
           </div>
         </div>
 
-        {/* RIGHT ICONS */}
+        
         <div className="hidden md:flex items-center gap-6 ml-auto">
-          {/* Search */}
+    
           <button className="text-white hover:text-gray-200">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
             </svg>
           </button>
 
-          {/* User */}
+
           <button className="text-white hover:text-gray-200">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 12a4 4 0 100-8 4 4 0 000 8zM5 19a7 7 0 0114 0H5z" />
             </svg>
           </button>
 
-          {/* Cart */}
+          
           <button className="relative text-white hover:text-gray-200">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4h2l2.4 9h11.2L21 7H6" />
@@ -493,7 +492,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* MOBILE MENU DROPDOWN */}
+      
       {isOpen && (
         <div className="md:hidden bg-white/95 border-t border-slate-100">
           {navItems.map((item) => (

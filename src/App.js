@@ -9,6 +9,7 @@ import MarqueeBar from './components/MarqueeBar';
 import MarqueeBarBottom from './components/MarqueeBarBottom';
 import Collection from './components/Collection';
 import Info from './components/Info';
+import ReelProducts from './components/ReelProducts';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <MarqueeBar />
         <Header />
         <Hero />
+        <ReelProducts />
         <Collection />
         <Products />
         <About />
